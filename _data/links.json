@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Pagina Inicial",
+        "url": "/",
+        "open_new_tab": false,
+        "show_desktop_menu": false,
+        "show_mobile_menu": true,
+        "show_in_footer": false
+    },
+    {
+        "title": "Contato",
+        "url": "/contato",
+        "open_new_tab": false,
+        "show_desktop_menu": true,
+        "show_mobile_menu": true,
+        "show_in_footer": true
+    },
+    {
+        "title": "Quem Somos",
+        "url": "/quem_somos",
+        "open_new_tab": false,
+        "show_desktop_menu": true,
+        "show_mobile_menu": true,
+        "show_in_footer": true
+    },
+    {
+        "title": "Fotos",
+        "url": "/fotos",
+        "open_new_tab": false,
+        "show_desktop_menu": true,
+        "show_mobile_menu": true,
+        "show_in_footer": true
+    },
+    {
+        "title": "Facebook",
+        "url": "https://fb.com/WM-Marceneiros-240345856158842/",
+        "open_new_tab": true,
+        "show_desktop_menu": false,
+        "show_mobile_menu": true,
+        "show_in_footer": true
+    }
+]

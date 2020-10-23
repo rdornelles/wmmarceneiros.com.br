@@ -1,0 +1,30 @@
+<!-- DESKTOP MENU -->
+<nav>
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo">WM<!--<img src="images/web/logotipo.gif" alt="VW Marceneiros"/>--></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            {% for link in site.data.links %}
+            {% if link.show_desktop_menu %}
+            <li><a {% if link.open_new_tab %} target="_blank" {% endif %} href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+  
+<!-- MOBILE MENU -->
+<ul class="sidenav" id="mobile-demo">
+    {% for link in site.data.links %}
+    {% if link.show_mobile_menu %}
+    <li><a {% if link.open_new_tab %} target="_blank" {% endif %} href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+</script>
