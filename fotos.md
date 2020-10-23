@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Fotos"
+title: "Galeria de Fotos"
 ---
 
 Pagina com fotos

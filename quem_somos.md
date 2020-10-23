@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Quem Somos"
+title: "Quem Somos?"
 ---
 
 ## Quem Somos ##

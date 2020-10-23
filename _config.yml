@@ -25,12 +25,15 @@ phone_show: +55 (51) 999595868
 description: >- # this means to ignore newlines until "baseurl:"
   Decks, pergolas em Porto Alegre e RS
 
+locale: pt_BR
+
 permalink: /:slugified_categories/:title.html
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 # Exclude from processing.

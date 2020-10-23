@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Contato"
+title: "Entre em Contato"
 ---
 
 ## Contato ##
