@@ -16,10 +16,14 @@ slider ({
 });
 </script>
 
-
+{%if site.posts %}
 <div class="row">
-    <div class="col s12 m6 l3">s12 m6 l3</div>
-    <div class="col s12 m6 l3">s12 m6 l3</div>
-    <div class="col s12 m6 l3">s12 m6 l3</div>
-    <div class="col s12 m6 l3">s12 m6 l3</div>
+    {%for post in site.posts %}
+    <div class="col s12 m6 l3">
+        <img src="{{ post.image }}">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.description }}</p>
+    </div>
+    {% endfor %}
 </div>
+{% endif %}
