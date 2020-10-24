@@ -7,9 +7,9 @@
         </div>
         <div class="col l4 offset-l2 s12">
             <ul>
-            {% for link in site.data.links %}
-            {% if link.show_in_footer %}
-            <li><a class="grey-text text-lighten-3" {% if link.open_new_tab %} target="_blank" {% endif %} href="{{ link.url }}">{{ link.title }}</a></li>
+            {% for page in site.pages %}
+            {% if page.title %}
+            <li><a class="grey-text text-lighten-3" href="{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
             {% endfor %}
             </ul>

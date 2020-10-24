@@ -4,9 +4,9 @@
         <a href="/" class="brand-logo">WM<!--<img src="images/web/logotipo.gif" alt="VW Marceneiros"/>--></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            {% for link in site.data.links %}
-            {% if link.show_desktop_menu %}
-            <li><a {% if link.open_new_tab %} target="_blank" {% endif %} href="{{ link.url }}">{{ link.title }}</a></li>
+            {% for page in site.pages %}
+            {% if page.title %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
             {% endfor %}
         </ul>
@@ -15,9 +15,11 @@
   
 <!-- MOBILE MENU -->
 <ul class="sidenav" id="mobile-demo">
-    {% for link in site.data.links %}
-    {% if link.show_mobile_menu %}
-    <li><a {% if link.open_new_tab %} target="_blank" {% endif %} href="{{ link.url }}">{{ link.title }}</a></li>
+    <li><a href="{{ site.baseurl }}"><i class="material-icons">home</i>Pagina inicial</a></li>
+    <li><a href="{{ site.facebook }}" target="_blank"><i class="material-icons">facebook</i>Facebook</a></li>
+    {% for page in site.pages %}
+    {% if page.title %}
+    <li><a href="{{ page.url }}"><i class="material-icons">arrow_forward</i>{{ page.title }}</a></li>
     {% endif %}
     {% endfor %}
 </ul>
