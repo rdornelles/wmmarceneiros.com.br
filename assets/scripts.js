@@ -15,9 +15,32 @@ document.addEventListener('DOMContentLoaded', () => {
         elem.innerHTML = carrousel;
     });
     // init carousel
-    var instances = M.Carousel.init(elems, {
+    M.Carousel.init(elems, {
         fullWidth: true,
         indicators: true
+    });
+});
+
+/**
+ * @description galery mount and init
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    // get elements galery
+    var elems = document.querySelectorAll('.galery');
+    elems.forEach(function(elem) {
+        var galery = "";
+        elem.childNodes[1].childNodes.forEach( (elem) => {
+            if (elem.outerHTML) {
+                elem.className = "materialboxed w100"; 
+                M.Materialbox.init(elem);
+            }
+        });
+        elem.childNodes[1].childNodes.forEach( (elem) => {
+            if (elem.outerHTML) {
+                galery += `<div class="col s12 m6">${elem.outerHTML}</div>`;
+            }
+        });
+        elem.innerHTML = galery; 
     });
 });
 
@@ -26,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 document.addEventListener('DOMContentLoaded', () => {
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
+    M.Sidenav.init(elems);
 });
 
 /**
@@ -34,5 +57,5 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 document.addEventListener('DOMContentLoaded', () => {
     var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
+    M.Materialbox.init(elems);
 });
