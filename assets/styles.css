@@ -1,3 +1,22 @@
+/**
+ * COLORS
+ * 
+ * color1: #F9F3EC color-w
+ * color2: #DA7F27 color-1
+ * color3: #A26F41 color-2
+ * color4: #75482A color-3
+ * color4: #312520 color-bg
+ */
+
+.brand-logo {
+    font-family: 'Fanwood';
+    text-shadow: 2px 0 0 #75482A, -2px 0 0 #75482A, 0 2px 0 #75482A, 0 -2px 0 #75482A, 1px 1px #75482A, -1px -1px 0 #75482A, 1px -1px 0 #75482A, -1px 1px 0 #75482A;
+}
+
+.bg-color-bg {
+    background-color: #312520;
+}
+
 .w100 {
     width: 100%;
 }
@@ -11,6 +30,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Roboto';
+    color: #333333;
+    background-color: #F9F3EC;
 }
 
 main {
