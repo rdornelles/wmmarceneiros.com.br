@@ -2,7 +2,7 @@
 <div 
     style="display: block; width: 500px; margin: 0 auto;"
     class="fb-page"
-    data-href="{{ site.facebook }}"
+    data-href="{{ site.facebook_link }}"
     data-tabs="" 
     data-width="500"
     data-height=""
@@ -10,8 +10,11 @@
     data-adapt-container-width="true"
     data-hide-cover="false"
     data-show-facepile="false">
-    <blockquote cite="{{ site.facebook }}" class="fb-xfbml-parse-ignore">
-        <a href="{{ site.facebook }}">{{ site.title }}</a>
+    <blockquote cite="{{ site.facebook_link }}" class="fb-xfbml-parse-ignore">
+        <a href="{{ site.facebook_link }}" title="Facebook">
+            <i class="material-icons inline-icon">facebook</i>
+            {{ site.facebook_show }}
+        </a>
     </blockquote>
 </div>
 </div>
