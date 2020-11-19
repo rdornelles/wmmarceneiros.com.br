@@ -1,5 +1,7 @@
 ---
 title: Galeria de Fotos
+redirect_from:
+  - fotos
 ---
 
 ## Galeria de Fotos ##
