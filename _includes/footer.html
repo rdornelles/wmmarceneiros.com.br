@@ -3,13 +3,15 @@
         <div class="row">
         <div class="col l6 s12">
             <h5 class="white-text">{{ site.title }}</h5>
-            <p class="grey-text text-lighten-4">{{ site.description }}</p>
+            <p class="grey-text text-lighten-4">{{ site.rodape }}</p>
         </div>
         <div class="col l4 offset-l2 s12">
             <ul>
             {% for page in site.pages %}
+            {% if page.category != "galeria" %}
             {% if page.title %}
             <li><a class="grey-text text-lighten-3" href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
             {% endif %}
             {% endfor %}
             </ul>
@@ -20,7 +22,7 @@
         <div class="container">
         <a href="{{ site.phone_link }}" class="grey-text text-lighten-3"><i class="material-icons inline-icon">phone</i>&nbsp;{{ site.phone_show }}</a>
         <a href="mailto:{{ site.email }}" class="grey-text text-lighten-4"><i class="material-icons inline-icon">email</i>&nbsp;{{ site.email }}</a>
-        <a class="grey-text text-lighten-4 right">Atendemos em todo o estado do Rio Grande do Sul.</a>
+        <a class="grey-text text-lighten-4 right">{{ site.atendimento }} </a>
         </div>
     </div>
 </footer>

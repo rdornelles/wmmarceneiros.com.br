@@ -8,6 +8,8 @@
  * color4: #312520 color-bg
  */
 
+/*************************************************/
+
 .brand-logo {
     font-family: 'Fanwood';
     text-shadow: 2px 0 0 #75482A, -2px 0 0 #75482A, 0 2px 0 #75482A, 0 -2px 0 #75482A, 1px 1px #75482A, -1px -1px 0 #75482A, 1px -1px 0 #75482A, -1px 1px 0 #75482A;
@@ -44,6 +46,15 @@
     position: absolute;
     transform: translate(-50%, -50%);
 }
+
+.border {
+    border: 2px;
+    border-style: solid;
+    border-color: #A26F41;
+    border-radius: 5px;
+}
+
+/*************************************************/
 
 body {
     display: flex;

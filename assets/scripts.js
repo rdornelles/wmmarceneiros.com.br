@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
         var galery = "";
         elem.childNodes[1].childNodes.forEach( (elem) => {
             if (elem.outerHTML) {
-                elem.className = "materialboxed w100"; 
+                elem.className = "border materialboxed w100"; 
                 M.Materialbox.init(elem);
             }
         });
         elem.childNodes[1].childNodes.forEach( (elem) => {
             if (elem.outerHTML) {
-                galery += `<div class="col s12 m6">${elem.outerHTML}</div>`;
+                galery += `<div class="col s12 m6">${elem.outerHTML}<br/></div>`;
             }
         });
         elem.innerHTML = galery; 

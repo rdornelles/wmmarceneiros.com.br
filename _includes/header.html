@@ -1,15 +1,17 @@
 <!-- DESKTOP MENU -->
 <nav>
     <div class="nav-wrapper bg-color-bg">
-        <a href="/" class="brand-logo">
+        <a href="{{ site.baseurl | absolute_url }}" class="brand-logo">
             <span>W&M</span>
             <span class="hide-on-med-and-down">Marceneiros Especializados</span>
         </a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             {% for page in site.pages %}
+            {% if page.category != "galeria" %}
             {% if page.title %}
             <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
             {% endif %}
             {% endfor %}
         </ul>
@@ -18,11 +20,23 @@
   
 <!-- MOBILE MENU -->
 <ul class="sidenav" id="mobile-demo">
-    <li><a href="{{ site.baseurl }}"><i class="material-icons">home</i>Pagina inicial</a></li>
+    <!-- PADRÃO -->
+    <li><a href="{{ site.baseurl | absolute_url }}"><i class="material-icons">home</i>Pagina inicial</a></li>
     <li><a href="{{ site.facebook }}" target="_blank"><i class="material-icons">facebook</i>Facebook</a></li>
+    <!-- GALERIAS -->
     {% for page in site.pages %}
+    {% if page.category == "galeria" %}
+    {% if page.title %}
+    <li><a href="{{ page.url }}"><i class="material-icons">camera_alt</i>{{ page.title }}</a></li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    <!-- PAGINAS -->
+    {% for page in site.pages %}
+    {% if page.category != "galeria" %}
     {% if page.title %}
     <li><a href="{{ page.url }}"><i class="material-icons">arrow_forward</i>{{ page.title }}</a></li>
+    {% endif %}
     {% endif %}
     {% endfor %}
 </ul>

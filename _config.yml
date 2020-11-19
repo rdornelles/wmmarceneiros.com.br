@@ -24,14 +24,19 @@ facebook: https://fb.com/WM-Marceneiros-240345856158842
 phone_link: https://wa.me/+5551999595868
 phone_show: +55 (51) 999595868
 image: 
-description: >- # this means to ignore newlines until "baseurl:"
-  Decks, pergolas em Porto Alegre e RS
 
-locale: pt_BR
+rodape: >-
+  Decks, pergolas em Porto Alegre e RS
+description: >-
+  Decks, pergolas em Porto Alegre e RS
+atendimento: >-
+  Atendemos em todo o estado do Rio Grande do Sul.
+
+locale: pt_br
 
 permalink: /:categories/:title.html
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" 
+url: "" 
 
 # Build settings
 plugins:

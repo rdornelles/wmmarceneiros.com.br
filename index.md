@@ -1,5 +1,7 @@
 ---
 layout: full
+redirect_from:
+  - fotos
 ---
 
 <br/>
@@ -14,14 +16,16 @@ layout: full
 </div>
 </section>
 
-{%if site.posts %}
+{%if site.pages %}
 <br/>
 <section class="row container">
-    {%for post in site.posts %}
-    <a class="col item s6 m3" alt="{{ post.description }}" href="{{ post.url }}">
-        <span>{{ post.title }}</span>
-        <img src="{{ post.image }}" alt="{{ post.description }}">
+    {%for page in site.pages %}
+    {% if page.category == "galeria" %}
+    <a class="col item s6 m3" title="{{ page.description }}" href="{{ page.url }}">
+        <span>{{ page.title }}</span>
+        <img src="{{ page.image }}" alt="{{ page.description }}" class="border">
     </a>
+    {% endif %}
     {% endfor %}
 <section>
 {% endif %}
