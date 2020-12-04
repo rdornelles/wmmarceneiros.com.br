@@ -35,7 +35,7 @@
     color: white;
 }
 
-.item img:hover {
+.item:hover img{
     opacity: 0.64;
 }
 
@@ -43,8 +43,12 @@
     top: 50%;
     left: 50%;
     z-index: 999;
+    opacity: 0.64;
+    font-size: 120%;
+    font-weight: bold;
     position: absolute;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 0 0 #75482A, -2px 0 0 #75482A, 0 2px 0 #75482A, 0 -2px 0 #75482A, 1px 1px #75482A, -1px -1px 0 #75482A, 1px -1px 0 #75482A, -1px 1px 0 #75482A;
 }
 
 .border {
