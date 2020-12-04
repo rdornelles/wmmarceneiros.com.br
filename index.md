@@ -9,15 +9,15 @@ redirect_from:
 
 <section class="container">
 <div class="carousel carousel-slider" markdown="1">
-![deck](/images/deck_wm_000.jpg)
+![Lareira](/images/variedade_mirante_zona_sul.jpg)
 ![deck](/images/pergolas_wm_001.jpg)
 ![deck](/images/deck_wm_002.jpg)
 ![deck](/images/escadas_wm_003.jpg)
-![deck](/images/deck_wm_004.jpg)
+![Portão de maderia](/images/variedade_ponte_jardim_0.jpg)
 ![deck](/images/pergolas_wm_005.jpg)
 ![deck](/images/deck_wm_006.jpg)
 ![deck](/images/escadas_wm_007.jpg)
-![deck](/images/deck_wm_008.jpg)
+![Fachada de loja](/images/variedade_fachada_loja.jpg)
 ![deck](/images/pergolas_wm_009.jpg)
 ![deck](/images/deck_wm_009.jpg)
 </div>

@@ -32,7 +32,7 @@ redirect_from:
 ![Portão de madeira](/images/variedade_portao_0.jpg)
 ![Portão de madeira](/images/variedade_portao_1.jpg)
 ![Portão de maderia](/images/variedade_portao_2.jpg)
-![Portão de madeira](/images/variedade_portao_3pg.jpg)
+![Portão de madeira](/images/variedade_portao_3.jpg)
 ![revestimento](/images/variedade_revestimento_0.jpg)
 ![revestimento](/images/variedade_revestimento_1.jpg)
 ![revestimento](/images/variedade_revestimento_2.jpg)
