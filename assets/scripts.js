@@ -59,3 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
     var elems = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(elems);
 });
+
+/**
+ * @description button tooltip init
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    M.Tooltip.init(elems);
+});
