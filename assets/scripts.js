@@ -67,3 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
     M.Tooltip.init(elems);
 });
+
+/**
+ * @description fixes
+ */
+ window.addEventListener('load', function() {
+    window.dispatchEvent(new Event('resize'));
+});
